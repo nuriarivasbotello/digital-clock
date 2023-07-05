@@ -9,7 +9,6 @@ const yearElement = document.getElementById('year');
 const hourLineElement = document.getElementById('line-hour');
 const minutesLineElement = document.getElementById('line-minute');
 const secondsLineElement = document.getElementById('line-second');
-const rootStyles = document.documentElement.style;
 let daysWeek = [
   'Sunday',
   'Monday',
@@ -36,12 +35,12 @@ let months = [
 
 setInterval(() => {
   const date = new Date();
+  const seconds=date.getSeconds();
   hourElement.textContent = date.getHours();
-  const seconds = date.getSeconds() * 6;
   minutesElement.textContent = date.getMinutes();
   weekElement.textContent = daysWeek[date.getDay()];
   dayElement.textContent = date.getDate();
   monthElement.textContent = months[date.getMonth()];
   yearElement.textContent = date.getFullYear();
-  rootStyles.setProperty('--seconds-rotation', seconds + 'deg');
+  const secondsDeg=
 }, 1000);
