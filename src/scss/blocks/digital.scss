@@ -1,0 +1,11 @@
+.digital {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  font-size: 60px;
+}
+.points {
+  position: relative;
+  top: 30px;
+}

@@ -1,0 +1,43 @@
+.line {
+  position: absolute;
+  left: 697px;
+  top: 90px;
+  margin: auto;
+  &__second {
+    width: 2px;
+    height: 110px;
+    background-color: red;
+    position: absolute;
+    transform: rotate(var(--seconds-rotation));
+    transform-origin: bottom;
+  }
+  &__minute {
+    width: 4px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    background-color: blue;
+    border-radius: 2px;
+    transform: rotate(var(--minutes-rotation));
+  }
+  &__hour {
+    width: 6px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    transform: rotate(var(--hours-rotation));
+  }
+}
+.point {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 692px;
+  top: 190px;
+  z-index: 1;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}

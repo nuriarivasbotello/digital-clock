@@ -13,9 +13,79 @@
       content="width=device-width, initial-scale=1.0"
     />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Nuevo títuloo</title>
+    <title>Reloj</title>
   </head>
   <body>
+    <main class="main">
+      <div
+        class="time"
+        id="time"
+      >
+        <div class="digital">
+          <h2
+            class="hour"
+            id="hour"
+          >
+            16
+          </h2>
+          <p class="points">:</p>
+          <h2
+            class="minutes"
+            id="minutes"
+          >
+            00
+          </h2>
+        </div>
+        <div class="calendar">
+          <h2
+            class="week"
+            id="week"
+          >
+            Monday
+          </h2>
+          <h2
+            class="day"
+            id="day"
+          >
+            4
+          </h2>
+          <h2
+            class="month"
+            id="month"
+          >
+            July
+          </h2>
+          <h2
+            class="year"
+            id="year"
+          >
+            2023
+          </h2>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="point"></div>
+        <img
+          class="image"
+          src="./assets/images/reloj.svg"
+          alt="Clock"
+        />
+        <div class="line">
+          <div
+            class="line__hour"
+            id="line-hour"
+          ></div>
+          <div
+            class="line__minute"
+            id="line-minute"
+          ></div>
+          <div
+            class="line__second"
+            id="line-second"
+          ></div>
+        </div>
+      </div>
+    </main>
     <script
       type="module"
       src="./js/index.js"

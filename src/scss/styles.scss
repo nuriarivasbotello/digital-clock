@@ -2,3 +2,9 @@
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
 @use 'blocks/body.scss';
+@use 'blocks/main.scss';
+@use 'blocks/digital.scss';
+@use 'blocks/clock.scss';
+@use 'blocks/time.scss';
+@use 'blocks/calendar.scss';
+@use 'blocks/line.scss';
