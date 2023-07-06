@@ -19,6 +19,7 @@
     background-color: blue;
     border-radius: 2px;
     transform: rotate(var(--minutes-rotation));
+    transform-origin: bottom;
   }
   &__hour {
     width: 6px;
@@ -28,6 +29,7 @@
     background-color: white;
     border-radius: 5px;
     transform: rotate(var(--hours-rotation));
+    transform-origin: bottom;
   }
 }
 .point {

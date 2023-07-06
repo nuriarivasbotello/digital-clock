@@ -32,15 +32,28 @@ let months = [
   'November',
   'December'
 ];
-
+//const newTime = number => (number < 10 ? '0' + number : number);
 setInterval(() => {
   const date = new Date();
-  const seconds=date.getSeconds();
+  const seconds = date.getSeconds();
+  const minutes = date.getMinutes();
+  const hours = date.getHours();
   hourElement.textContent = date.getHours();
-  minutesElement.textContent = date.getMinutes();
   weekElement.textContent = daysWeek[date.getDay()];
   dayElement.textContent = date.getDate();
   monthElement.textContent = months[date.getMonth()];
   yearElement.textContent = date.getFullYear();
-  const secondsDeg=
+
+  const newTime = number => {
+    if (number < 10) {
+      minutesElement.textContent = '0' * minutes;
+    }
+  };
+
+  const secondsDeg = seconds * 6;
+  secondsLineElement.style.transform = `rotate(${secondsDeg}deg)`;
+  const minutesDeg = minutes * 6 + seconds / 10;
+  minutesLineElement.style.transform = `rotate(${minutesDeg}deg)`;
+  const hoursDeg = hours * 30 + minutes / 2;
+  hourLineElement.style.transform = `rotate(${hoursDeg}deg)`;
 }, 1000);
