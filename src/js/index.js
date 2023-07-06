@@ -46,8 +46,11 @@ setInterval(() => {
 
   const newTime = number => {
     if (number < 10) {
-      minutesElement.textContent = '0' * minutes;
+      minutesElement.textContent = '0' + minutes;
+    } else {
+      minutesElement.textContent = minutes;
     }
+    newTime();
   };
 
   const secondsDeg = seconds * 6;
