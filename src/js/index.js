@@ -50,9 +50,8 @@ setInterval(() => {
     } else {
       minutesElement.textContent = minutes;
     }
-    newTime();
   };
-
+  newTime(minutes);
   const secondsDeg = seconds * 6;
   secondsLineElement.style.transform = `rotate(${secondsDeg}deg)`;
   const minutesDeg = minutes * 6 + seconds / 10;
